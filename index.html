@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/profile.png">
+    <link rel="stylesheet" href="index.css">
     <title>Awesomne book ES6</title>
 </head>
 <body>
  <!-- ==================================================================================================================================== -->
     <!-- the header here -->
     <header>
-            <div>
-                <span>AWESOME BOOK</span>
+            <nav>
+                <div class="navigation">
+                    <span class="main-title">AWESOME BOOK</span>
                     <ul>
                         <li><a href="#">List</a></li>
-                        <span></span>
+                        <span class="h-line"></span>
                         <li><a href="#">Add New</a></li>
-                        <span></span>
+                        <span class="h-line"></span>
                         <li><a href="#">Contact</a></li>
                     </ul>
-            </div>
-            <span>date here</span>
+                </div>
+                <div  id="times-zone"><span id="date&time">date here</span></div>
+            </nav>
     </header>
 <!-- end of header here -->
 <!-- ==================================================================================================================================== -->
@@ -32,7 +35,7 @@
             <main>
                 <!-- The list of books -->
                 <div class="bookItem">
-                    <div class="about-book"><q>Title</q>By <span>Author</span></div>
+                    <div class="about-book"><q>Title</q> &nbsp; By &nbsp;<span>Author</span></div>
                     <button>Remove</button>
                 </div>
                 <!-- End of the list of books -->
@@ -46,5 +49,6 @@
 <footer>
     <div>Copyright: Fastdevz 2022</div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+:root{
+    --text: black;
+    --background: whitesmoke;
+    --text-hover: orangered;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    background-color: var(--background);
+}
+/*============================================================================================================*/
+/* The header section here */
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 1rem 0rem;
+}
+.main-title{
+    font-weight:bold;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav> #times-zone{
+    padding: 1rem 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+}
+nav> .navigation{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .1rem 1rem ;
+    border-radius: 1rem;
+    width: 90vw;
+}
+nav> .navigation ul{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+    list-style-type: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
+.h-line{
+    width: .1rem;
+    background: var(--text);
+    height: 2rem;
+}
+nav> .navigation ul a{
+    text-decoration: none;
+    color: var(--text);
+}
+nav> .navigation ul a:hover{
+    color: var(--text-hover);
+}
+nav> #times-zone{
+    font-size: 1.1rem;
+    font-weight: bold;
+} 
+
+/* End ofThe header section here */
+
+/*============================================================================================================*/
