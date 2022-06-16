@@ -21,7 +21,9 @@ nav{
     justify-content: center;
     align-items: center;
     width:100%;
-    padding: 1rem 0rem;
+    height: 7vw;
+    padding: 2rem 0rem 0rem 0rem;
+    margin: 0%;
 }
 .main-title{
     font-weight:bold;
@@ -75,8 +77,21 @@ nav> #times-zone{
 /* End ofThe header section here */
 /*============================================================================================================*/
 /*section all awesome book*/
-#list-itmes{
-
+#list-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
+#list-items h2{
+    font-size: 2.2vw;
+    word-spacing: 1vw;
+    letter-spacing: .2vw;
+    transition: .4s;
+}
+#list-items h2:hover{
+    color: var(--text-hover);
+}
+
 /*End of section all awasome book*/
 /*============================================================================================================*/
