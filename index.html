@@ -30,13 +30,27 @@
 <!-- ==================================================================================================================================== -->
 <!-- the awesome books list section here -->
     <section id="list-items">
-        <h2 id="main-heading">All AWESOME BOOKS</h2>
+        <h2 id="main-Heading">All AWESOME BOOKS</h2>
         <!-- main section all Awesome books -->
-            <main id="main-content">
+            <main id="main-Content">
                 <!-- The list of books -->
-                <div class="bookItem">
-                    <div class="about-book"><q>Title</q> &nbsp; By &nbsp;<span>Author</span></div>
-                    <button>Remove</button>
+                <div class="bookItem indexBookItem">
+                    <div class="about-Book">
+                        <q>Title</q> 
+                        &nbsp; By &nbsp;
+                        <span>Author</span>
+                    </div>
+                    <button id="btnRemove">Remove</button>
+                </div>
+                <!-- End of the list of books -->
+                <!-- The list of books -->
+                <div class="bookItem indexBookItem">
+                    <div class="about-Book">
+                        <q>Title</q> 
+                        &nbsp; By &nbsp;
+                        <span>Author</span>
+                    </div>
+                    <button id="btnRemove">Remove</button>
                 </div>
                 <!-- End of the list of books -->
             </main>
@@ -44,10 +58,18 @@
     </section>
 <!-- End of the awesome books list section here -->
 <!-- ==================================================================================================================================== -->
-
+<!-- Add book  section -->
+    <section id="addBookForm">
+        <form action="#" method="post"> 
+            <input type="text" placeholder="Title"><br>
+            <input type="text" placeholder="Author Name"><br>
+            <input type="submit" name="submit" id="addNewBook" value="ADD">
+        </form>
+    </section>
+<!-- End of the Add book section -->
 <!-- ==================================================================================================================================== -->
-<footer>
-    <div>Copyright: Fastdevz 2022</div>
+<footer class="footer">
+    <div class="footer__content">Copyright: Fastdevz 2022</div>
 </footer>
 <script src="index.js"></script>
 </body>
