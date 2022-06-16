@@ -103,7 +103,7 @@ nav> #times-zone{
 #list-items h2:hover{
     color: var(--text-hover);
 }
-#main-Content{
+.main-Content{
     display: none;
     border: none;
     background: var(--text-hover-white);
@@ -114,8 +114,9 @@ nav> #times-zone{
     width: 80vw;
     height: auto;
     padding: 2rem;
+    transition: opacity ease-in-out 0.3s;
 }
-#main-Content--active{
+.main-Content.main-content-active{
     display: block;
 }
 .bookItem{
@@ -148,8 +149,8 @@ nav> #times-zone{
 /*End of section all awasome book*/
 /*============================================================================================================*/
 /*  The Add New book Section*/
-    #addBookForm{
-        display:flex;
+    .addBookForm{
+        display:none;
         flex-direction:column;
         border: none;
         border-radius: 10px;
@@ -162,6 +163,9 @@ nav> #times-zone{
         height: auto;
         justify-content: center;
         align-items: center;
+    }
+    .addBookForm.addBookForm-active{
+        display:flex;
     }
     #addBookForm form{
         display: flex;
@@ -195,6 +199,31 @@ nav> #times-zone{
     border-radius: 10px;
 }
 /*End of the Add book Section*/
+/*============================================================================================================*/
+/* The contact here */
+.contact{
+    display: none;
+    border: none;
+    background: var(--text-hover-white);
+    border-radius: 10px;
+    box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    font-size:1.4vw;
+    font-weight:600; 
+    padding: 2rem; 
+    line-height: 2rem; 
+}
+.contact.contact-active{
+    display: block;
+}
+#contact p{
+    color: var(--text-hover);
+}
+#contact ul a{
+    text-decoration: none;
+}
+/* End of the contact here */
 /*============================================================================================================*/
 /* The footer section*/
 footer{

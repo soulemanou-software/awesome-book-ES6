@@ -16,11 +16,11 @@
                 <div class="navigation">
                     <span class="main-title">AWESOME BOOK</span>
                     <ul>
-                        <li><a href="#">List</a></li>
+                        <li><a href="#" class="listNav">List</a></li>
                         <span class="h-line"></span>
-                        <li><a href="#">Add New</a></li>
+                        <li><a href="#" class="listNav">Add New</a></li>
                         <span class="h-line"></span>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="listNav">Contact</a></li>
                     </ul>
                 </div>
                 <div  id="times-zone"><span id="date&time">date here</span></div>
@@ -32,7 +32,7 @@
     <section id="list-items">
         <h2 id="main-Heading">All AWESOME BOOKS</h2>
         <!-- main section all Awesome books -->
-            <main id="main-Content">
+            <main id="main-Content" class="main-Content main-content-active sectionDisplayed" >
                 <!-- The list of books -->
                 <div class="bookItem indexBookItem">
                     <div class="about-Book">
@@ -59,7 +59,7 @@
 <!-- End of the awesome books list section here -->
 <!-- ==================================================================================================================================== -->
 <!-- Add book  section -->
-    <section id="addBookForm">
+    <section id="addBookForm" class="addBookForm addBookForm-active sectionDisplayed">
         <form action="#" method="post"> 
             <input type="text" placeholder="Title"><br>
             <input type="text" placeholder="Author Name"><br>
@@ -67,6 +67,19 @@
         </form>
     </section>
 <!-- End of the Add book section -->
+<!-- ==================================================================================================================================== -->
+<!-- The contact section -->
+    <section id="contact" class="contact contact-active sectionDisplayed" >
+        <p>Do any questions or you just want to say "Hello" ? <br>
+            you can reach out to me !
+        </p>
+        <ul>
+            <li>My Email: <a href="mailto: mroboot9@gmail.com">mroboot9@gmail.com</a></li>
+            <li>My Phone Number: <a href="tel:237680802324">(+237) 680-80-23-24</a></li>
+            <li>My Address: <a href="https://g.page/Fastdevz?share">Fastdevz</a></li>
+        </ul>
+    </section>
+<!-- End of the contact section-->
 <!-- ==================================================================================================================================== -->
 <footer class="footer">
     <div class="footer__content">Copyright: Fastdevz 2022</div>
