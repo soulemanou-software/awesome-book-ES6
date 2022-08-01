@@ -116,7 +116,7 @@ nav> #times-zone{
     padding: 2rem;
     transition: opacity ease-in-out 0.3s;
 }
-.main-Content.main-content-active{
+.main-contentActive{
     display: block;
 }
 .bookItem{
@@ -164,7 +164,7 @@ nav> #times-zone{
         justify-content: center;
         align-items: center;
     }
-    .addBookForm.addBookForm-active{
+   .addBookFormActive{
         display:flex;
     }
     #addBookForm form{
@@ -214,7 +214,7 @@ nav> #times-zone{
     padding: 2rem; 
     line-height: 2rem; 
 }
-.contact.contact-active{
+.contactActive{
     display: block;
 }
 #contact p{
