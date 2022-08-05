@@ -23,6 +23,9 @@ body{
 /*============================================================================================================*/
 /* The header section here */
 nav{
+    position: fixed;
+    left: 0;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,6 +92,7 @@ nav> #times-zone{
 /*============================================================================================================*/
 /*section all awesome book*/
 #list-items{
+    margin-top: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,11 +134,14 @@ nav> #times-zone{
     margin-bottom: .8rem ;
     border: none;
 }
+.bookItem:nth-last-of-type(odd){
+    background-color: var(--listbglight);
+}
 .about-Book{
     font-size: 1.2rem;
     border: 2px solid re
 }
-#btnRemove{
+.btnRemove{
      height: 2.5vw;
      width: 8vw;
      border: none;
@@ -142,7 +149,7 @@ nav> #times-zone{
      font-size: 1.1rem;
      font-weight: 600;
 }
-#btnRemove:hover{
+.btnRemove:hover{
     background-color:var(--text-hover);
     color: var(--text-hover-white);
 }
@@ -213,9 +220,14 @@ nav> #times-zone{
     font-weight:600; 
     padding: 2rem; 
     line-height: 2rem; 
+    
+    
 }
 .contactActive{
     display: block;
+    transition: all 0.5s ease-in-out ;
+   
+    
 }
 #contact p{
     color: var(--text-hover);
@@ -227,14 +239,17 @@ nav> #times-zone{
 /*============================================================================================================*/
 /* The footer section*/
 footer{
-    position: absolute;
+    position:absolute;
     left: 0;
     right: 0;
+    bottom: 0;
+    margin-top: 2em;
     bottom: 2px;
     width: 100%;
+    z-index: 20;
   }
   .footer .footer__content {
-    padding: 12px 24px;
+    padding: 1em;
     font-size: 18px;
     font-weight: 600;
     border: none;
