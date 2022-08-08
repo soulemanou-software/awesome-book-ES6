@@ -2,6 +2,9 @@
     --text: black;
     --background: whitesmoke;
     --text-hover: orangered;
+    --text-hover-white: #fff;
+    --listbg: aqua;
+    --listbglight: rgba(140, 153, 153, 0.95);
 }
 html{
     scroll-behavior: smooth;
@@ -12,10 +15,17 @@ body{
     margin:0;
     box-sizing:border-box;
     background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*============================================================================================================*/
 /* The header section here */
 nav{
+    position: fixed;
+    left: 0;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +48,11 @@ nav> #times-zone{
     align-self: flex-end;
 }
 nav> .navigation{
-    border: 3px solid black;
+    border: none;
+    box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    background: var(--text-hover-white);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,12 +86,14 @@ nav> .navigation ul a:hover{
 nav> #times-zone{
     font-size: 1.1rem;
     font-weight: bold;
+    margin: 0 2em;
 } 
 
 /* End ofThe header section here */
 /*============================================================================================================*/
 /*section all awesome book*/
 #list-items{
+    margin-top: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +108,157 @@ nav> #times-zone{
 #list-items h2:hover{
     color: var(--text-hover);
 }
-
+.main-Content{
+    display: none;
+    border: none;
+    background: var(--text-hover-white);
+    border-radius: 10px;
+    box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    width: 80vw;
+    height: auto;
+    padding: 2rem;
+    transition: opacity ease-in-out 0.3s;
+}
+.main-contentActive{
+    display: block;
+}
+.bookItem{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: var(--listbg);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: .8rem ;
+    border: none;
+}
+.bookItem:nth-last-of-type(odd){
+    background-color: var(--listbglight);
+}
+.about-Book{
+    font-size: 1.2rem;
+    border: 2px solid re
+}
+.btnRemove{
+     height: 2.5vw;
+     width: 8vw;
+     border: none;
+     border-radius: 10px;
+     font-size: 1.1rem;
+     font-weight: 600;
+}
+.btnRemove:hover{
+    background-color:var(--text-hover);
+    color: var(--text-hover-white);
+}
 /*End of section all awasome book*/
+/*============================================================================================================*/
+/*  The Add New book Section*/
+    .addBookForm{
+        display:none;
+        flex-direction:column;
+        border: none;
+        border-radius: 10px;
+        background: var(--text-hover-white);
+        box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+        -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+        -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+        padding: 2rem;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+   .addBookFormActive{
+        display:flex;
+    }
+    #addBookForm form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+    #addBookForm form input[type="text"]{
+        width:35vw;
+        height: 2vw;
+        font-size:1.2vw;
+        font-weight: 600;
+        color: var(--text-hover);
+        border-radius: 10px;
+        padding: .5rem;
+    }
+    #addBookForm form input[type="text"]::placeholder{
+    font-size:1.2vw;
+    color: var(--text-hover);
+}
+#addBookForm form input[type="text"]:active{
+    box-shadow: 0px 0px 12px -3px orangered;
+}
+#addBookForm form input[type="submit"]{
+    width:8vw;
+    height: 2.5vw;
+    font-size: 1.1vw;
+    font-weight:600;
+    color: var(--text-hover);
+    border-radius: 10px;
+}
+/*End of the Add book Section*/
+/*============================================================================================================*/
+/* The contact here */
+.contact{
+    display: none;
+    border: none;
+    background: var(--text-hover-white);
+    border-radius: 10px;
+    box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    font-size:1.4vw;
+    font-weight:600; 
+    padding: 2rem; 
+    line-height: 2rem; 
+    
+    
+}
+.contactActive{
+    display: block;
+    transition: all 0.5s ease-in-out ;
+   
+    
+}
+#contact p{
+    color: var(--text-hover);
+}
+#contact ul a{
+    text-decoration: none;
+}
+/* End of the contact here */
+/*============================================================================================================*/
+/* The footer section*/
+footer{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 2em;
+    bottom: 2px;
+    width: 100%;
+    z-index: 20;
+  }
+  .footer .footer__content {
+    padding: 1em;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background: var(--text-hover-white);
+    border-radius: 10px;
+    box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+    -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  }
+/* end of the footer section */
 /*============================================================================================================*/

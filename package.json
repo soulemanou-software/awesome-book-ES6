@@ -1,5 +1,5 @@
 {
-  "name": "awesome-book-es6",
+  "name": "awesome-books-es6",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
@@ -11,14 +11,15 @@
     "url": "git+https://github.com/soulemanou-software/awesome-book-ES6.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "soulemanou kunchiefuh babanou",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/soulemanou-software/awesome-book-ES6/issues"
   },
   "homepage": "https://github.com/soulemanou-software/awesome-book-ES6#readme",
   "dependencies": {
-    "luxon": "^2.4.0"
+    "luxon": "^2.5.0",
+    "three": "^0.141.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
