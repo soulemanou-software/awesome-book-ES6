@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/soulemanou-software/awesome-book-ES6#readme",
   "dependencies": {
-    "luxon": "^2.4.0",
+    "luxon": "^2.5.0",
     "three": "^0.141.0"
   },
   "devDependencies": {

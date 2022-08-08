@@ -86,6 +86,7 @@ nav> .navigation ul a:hover{
 nav> #times-zone{
     font-size: 1.1rem;
     font-weight: bold;
+    margin: 0 2em;
 } 
 
 /* End ofThe header section here */
