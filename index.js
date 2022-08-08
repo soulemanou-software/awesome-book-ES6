@@ -7,7 +7,7 @@ navbar();
 // data function called
 const now = DateTime.now();
 const dateTime = document.getElementById('dateTime');
-dateTime.innerHTML = `${now.hour}h:${now.minute}m:${now.second}s , ${now.day}-${now.month}-${now.year}`;
+dateTime.innerHTML = `${now.hour}h:${now.minute}m:${now.second}s , ${now.day}/${now.month}/${now.year}`;
 //  end date here
 // display book list here
 display(data);
